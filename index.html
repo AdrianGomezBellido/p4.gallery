@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portades</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;500&family=Poppins:wght@400;500;600;900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 32px;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+        blockquote{
+            font-size: 60%;
+        }
+        .links{
+            font-size: 70%;
+        }
+        :root{
+            --m_clar:#f5f1ec;
+            --m_mig:#FABE8B;
+            --m_fosc:#E39774;
+            --v_clar:#FD9781;
+            --v_mig:#FDD881;
+            --v_fosc:#dfbf68;
+            --poppins: 'Poppins', sans-serif;
+            --bitter: 'Bitter', serif;
+        }
+        .container{
+            padding: 0 3em;
+        }
+        body>header .container{
+            display: flex;
+            flex-direction: column;
+            justify-content:space-between;
+            background-color: var(--m_clar);
+            height: 100vh;
+        }
+        section .container{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        div .container{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        section .meteorologia{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        section .container h3{
+            width: 100%;
+        }
+        section{
+            height: 80vh;
+        }
+        footer{
+            height: 50vh;
+        }
+        
+        #nubes{
+            background-color: var(--v_clar);
+        }
+        #meteorologia{
+            background-color: var(--m_mig);
+        }
+        #xxss{
+            background-color: var(--v_clar);
+        }
+        h1{
+            font-size: 3em;
+            font-family: var(--poppins);
+            font-weight: 900;
+            color: var(--m_fosc);
+        }
+        h2{
+            font-size: 2em;
+            font-family: var(--bitter);
+            font-weight: 400;
+            color: var(--m_fosc);
+        }
+        nav a{
+            font-size: 1.5em;
+        }
+        h3{
+            font-family: var(--poppins);
+        }
+        /* CARD PORTADES */
+        .cover{
+            padding: 1.2em;
+            margin: 0.5em;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            min-width: 200px;
+            width: 180px;
+            max-height: 500px;
+            flex-grow: 1;
+            background-color: var(--v_clar);
+        }
+        .cover header{
+            width: 100%;
+            padding: 1em 0 0 0;
+            font-size: 0.3em;
+            display: flex;
+            flex-direction: column;
+        }
+        .cover header h4{
+            font-family: var(--bitter);
+            font-size: 2em;
+            justify-content: center;
+            color: var(--m_clar);
+        }
+        .cover_img{
+            width: 90%;
+            height: 120px;
+            display: flex;
+            overflow: hidden;
+        }
+        .cover_img img{
+            object-fit: cover;
+            /* objecti-position: center; */
+            width: 100%;
+        }
+        /* CARD METEROLOGIA */
+        .meterologia_img{
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            height: 500px;
+            margin: 1em;
+            align-items: center;
+            box-shadow: var(--v_clar) 0px 0px 10px;
+        }
+        .card_meterologia{
+            width: 200px;
+            height: 200px;
+        }
+        .card_meterologia img{
+            border-radius: 200px;
+            object-fit: cover;
+            height: 100%;
+        }
+        
+            /* height: 100%; */
+        
+        /* @media (max-width:550px){
+            body{
+                font-size: 15px;
+            }
+        } */
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <hgroup>
+                <h1>Cambios nubes</h1>
+                <h2>
+                    "Cambios climatologicos"
+                </h2>
+            </hgroup>
+            <nav class="links">
+                <a href="#nubes">nubes</a>
+                <a href="#meteorologia">meteorologia</a>
+                <a href="#xxss">xxss</a>
+            </nav>
+        </div>  
+    </header>
+    <main>
+        <section id="nubes">   
+            <h3>nubes</h3>
+                <div class="container">
+                    <div class="cover">
+                        <div class="cover_img">
+                            <img src="nubes/566166e242c19971965461dca9509292.jpg" alt="">
+                        </div>
+                        <header>
+                            <h4>nubecita</h4>
+                        </header>
+                    </div>
+                    <div class="cover">
+                        <div class="cover_img">
+                            <img src="nubes/nubes-cambio-climatico-portada.jpg" alt="">
+                        </div>
+                        <header>
+                            <h4>nubecita mejor</h4>
+                        </header>
+                    </div>
+                    <div class="cover">
+                        <div class="cover_img">
+                            <img src="nubes/nubes-enfriamiento.jpg" alt="">
+                        </div>
+                        <header>
+                            <h4>nubecita mejorada</h4>
+                        </header>
+                    </div>
+                    <div class="cover">
+                        <div class="cover_img">
+                            <img src="nubes/nubes.jpg" alt="">
+                        </div>
+                        <header>
+                            <h4>nubecita extrema</h4>
+                        </header>
+                    </div>
+                    <div class="cover">
+                        <div class="cover_img">
+                            <img src="nubes/nubes_destacada-1024x682.jpg" alt="">
+                        </div>
+                        <header>
+                            <h4>nubecita potencial</h4>
+                        </header>
+                    </div>
+                    <div class="cover">
+                        <div class="cover_img">
+                            <img src="nubes/tipos-nubes-large.jpg" alt="">
+                        </div>
+                        <header>
+                            <h4>nubecita fuerte</h4>
+                        </header>
+                    </div>
+                    <div class="cover">
+                        <div class="cover_img">
+                            <img src="nubes/P1040392.JPG" alt="">
+                        </div>
+                        <header>
+                            <h4>nubecita cute</h4>
+                        </header>
+                    </div>
+                    <div class="cover">
+                        <div class="cover_img">
+                            <img src="nubes/nubes-1-kUKH--620x349@abc.jpg" alt="">
+                        </div>
+                        <header>
+                            <h4>nubecita baby</h4>
+                        </header>
+                    </div>
+                    <div class="cover">
+                        <div class="cover_img">
+                            <img src="nubes/167726.jpg" alt="">
+                        </div>
+                        <header>
+                            <h4>nubecita uwu</h4>
+                        </header>
+                    </div>
+                    <div class="cover">
+                        <div class="cover_img">
+                            <img src="nubes/techos-topes-de-nubes-y-su-medicion-367001-1_1024.jpg" alt="">
+                        </div>
+                        <header>
+                            <h4>nubecita cool</h4>
+                        </header>
+                    </div>
+                   
+                </div>
+        </section>
+        
+        <section id="meteorologia">
+            <div class="container">
+            <h3>meteorologia</h3>
+            <div class="meterologia_img">
+                <div class="card_meterologia">
+                    <img src="metereologia/nubecita tormenta.jpg" alt="">
+                </div>
+                <header>
+                    <h4>nubecita</h4>
+                    <blockquote>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+                    </blockquote>
+
+                </header>
+            </div>
+            <div class="meterologia_img">
+                <div class="card_meterologia">
+                    <img src="metereologia/tormenta blanca.jpg" alt="">
+                </div>
+                <header>
+                    <h4>nubecita</h4>
+                    <blockquote>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+                    </blockquote>
+
+                </header>
+            </div>
+            <div class="meterologia_img">
+                <div class="card_meterologia">
+                    <img src="metereologia/5480890.jpg" alt="">
+                </div>
+                <header>
+                    <h4>nubecita</h4>
+                    <blockquote>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+                    </blockquote>
+
+                </header>
+            </div>
+            <div class="meterologia_img">
+                <div class="card_meterologia">
+                    <img src="metereologia/meteorologia.jpg" alt="">
+                </div>
+                <header>
+                    <h4>nubecita</h4>
+                    <blockquote>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+                    </blockquote>
+
+                </header>
+            </div>
+            <div class="meterologia_img">
+                <div class="card_meterologia">
+                    <img src="metereologia/cambios .jpg" alt="">
+                </div>
+                <header>
+                    <h4>nubecita</h4>
+                    <blockquote>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+                    </blockquote>
+
+                </header>
+            </div>
+                <div class="meterologia_img">
+                <div class="card_meterologia">
+                    <img src="metereologia/nube tormenta.jpg" alt="">
+                </div>
+                <header>
+                    <h4>nubecita</h4>
+                    <blockquote>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+                    </blockquote>
+
+                </header>
+            </div>
+        </div>
+        </section>
+        
+    </main>
+    <footer id="xxss">
+        <h3>xxss</h3>
+        <div class="container">
+
+    </footer>
+        </div>
+</body>
+</html>
